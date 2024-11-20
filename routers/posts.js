@@ -13,6 +13,8 @@ router.get("/:id", (req, res) => {
   const index = req.params.id;
   const selectedEl = post[index];
 
+  if (index > post.length) res.json("Post inesistente");
+
   res.json([`Visualizzo un elemento: ${index}`, selectedEl]);
 });
 
