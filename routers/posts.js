@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-const post = require("./myPost.js");
+const post = require("../db/postArray");
 
 // index
 router.get("/", (req, res) => {
-  res.json(post);
+  res.json(["Visualizzo tutti gli elementi", post]);
 });
 
 // show

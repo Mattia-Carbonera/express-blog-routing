@@ -1,6 +1,3 @@
-const express = require("express");
-const router = express.Router();
-
 const post = [
   {
     Title: "ciambellone",
@@ -69,11 +66,4 @@ const post = [
   },
 ];
 
-router.get("/", (req, res) => {
-  let totalPost = 0;
-  post.forEach((post) => (totalPost += 1));
-
-  res.json([post, "Total Post: " + parseInt(totalPost)]);
-});
-
-module.exports = router;
+module.export = post;
