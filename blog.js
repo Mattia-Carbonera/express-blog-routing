@@ -4,7 +4,7 @@ const port = 3000;
 
 app.use(express.static("public"));
 
-const menuRouter = require("./routers/menu");
+const menuRouter = require("./routers/myPost");
 app.use("/bacheca", menuRouter);
 const postsRouter = require("./routers/posts");
 app.use("/posts", postsRouter);
