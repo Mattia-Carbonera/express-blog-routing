@@ -11,8 +11,9 @@ router.get("/", (req, res) => {
 // show
 router.get("/:id", (req, res) => {
   const index = req.params.id;
+  const selectedEl = post[index];
 
-  res.json(`Visualizzo un elemento: ${index}`);
+  res.json([`Visualizzo un elemento: ${index}`, selectedEl]);
 });
 
 // store

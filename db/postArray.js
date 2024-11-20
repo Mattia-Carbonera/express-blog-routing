@@ -66,4 +66,4 @@ const post = [
   },
 ];
 
-module.export = post;
+module.exports = post;
